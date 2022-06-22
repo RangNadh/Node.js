@@ -38,3 +38,13 @@ npm init --yes
 
 -> Uninstalling packages: npm uninstall package name. => it will no remove the entry.
 -> To remove the entry we will use npm uninstall package name --save. => this will removes the entry also.
+
+-> Some packages we have to install/uninstall from command prompt only => those are called global packages.
+
+-> In command we will write like this npm install package name -g => this represents that the package is installed globally.
+
+-> npm list is used to list out all the local and global package in package.json.
+
+->Depth is used to know the which are depending on others like => npm list --depth <number>
+
+npm list --global true --depth <number> => we will get the globally installed packages.
