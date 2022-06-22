@@ -1,0 +1,24 @@
+Node.js:
+-> It is uses an event-driven, non-blocking model that makes it lightweight and efficient.
+
+    -> A js runtime built on chrome's v8 js engine.
+
+    -> A platform which allows to run js on a computer/server.
+
+    -> Read, delete and update files.
+
+    -> Easily communicate with a database.
+
+Why node.js is popular?
+
+    -> It uses js.
+
+    -> very fast(runs on the v8  engine & uses non-blocking code).
+
+    -> Huge ecosystem of open source packages(npm).
+
+    -> Great for real-time services(like chats).
+
+JS engines:
+-> Computers do not understand JS.
+-> A js engine takes js, and converts it into something it does understand - machine code.
