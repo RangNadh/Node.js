@@ -1,0 +1,33 @@
+-> Modules => A part of reusable code that can be stored in it.
+
+-> Package => Collection of one or more reusable codes along with package.json.
+
+-> The reusable code that can be stored in npm registry to reuse that code by others also.
+
+-> If there is updates happened in that code the other devolopers who are using that code they also get the notifications to check the updates.
+
+Package Manager ->
+npm is the standard package manager for node.js.
+
+-> npm help => it is used to show the usage of different types of commands that are in npm.
+
+representation => npm <command>
+
+-> npm help-search update => it will search for update in npm documentation.
+
+-> Package.json => There are 2 types of usages
+
+1. Manage dependencies
+   -> Express and its version
+   -> We can create our own dependencies.
+
+2. Scripts:
+   -> Initial build
+
+-> While doing the initialisation of npm we have to give --yes in it. It is used to give answer to every question as yes.
+
+-> while initialising we can give the dependencies by our own also like.
+
+npm config set init-author-name "Ranganadh"
+npm set init - license "Own"
+npm init --yes
