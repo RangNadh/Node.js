@@ -48,3 +48,34 @@ npm init --yes
 ->Depth is used to know the which are depending on others like => npm list --depth <number>
 
 npm list --global true --depth <number> => we will get the globally installed packages.
+
+-> versioning: ex: "lodash": "^4.16.1" => "Major version num. Minor version num. Patch version num"
+
+-> Sometimes we have to install a particular version only. That time we have to give the version along with the installation.
+
+-> npm install lodash@3.3.0 --save
+
+-> If we use ^ symbol it will reamins major version num as same. If we use ~ symbol it will remains major and minor version as same. If we want any specific version they is no symbol to denote.
+
+-> We can update the packages to latest version. => npm update <package-name> --save.
+
+-> To update total npm => npm install npm@latest -g
+
+-> npm prune => it is used to remove extraneous packages.
+
+Shortcuts:
+
+-> instead of using npm init --yes , we can use npm init -y
+
+-> instead of using npm install <package-name> , we can use npm i <package-name>
+
+-> instead of using npm i <package-name> --save , we can use npm i <package-name> -S
+
+-> instead of using npm install <package-name> --save-dev, we can use npm i <package-name> -D
+
+-> script is used to run the program like:
+
+    -> Create a file and add something in that file.
+    -> In json file change in scripts from test to start and save it.
+    -> And run the npm using npm start.
+    -> Then we will get the whatever content in that file into the command prompt.
