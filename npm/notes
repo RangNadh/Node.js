@@ -31,3 +31,10 @@ representation => npm <command>
 npm config set init-author-name "Ranganadh"
 npm set init - license "Own"
 npm init --yes
+
+-> we can install the packages => npm install <package-name>.
+
+-> if we do npm install it will install all the node modules that we are having in npm.
+
+-> Uninstalling packages: npm uninstall package name. => it will no remove the entry.
+\_> To remove the entry we will use npm uninstall package name --save. => this will removes the entry also.
