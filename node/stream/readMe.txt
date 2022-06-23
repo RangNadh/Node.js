@@ -1,0 +1,1 @@
+Modules is a part of reusable code that can be stored in it. Package is a Collection of one or more reusable codes along with package.json. The reusable code that can be stored in npm registry to reuse that code by others also. If there is updates happened in that code the other devolopers who are using that code they also get the notifications to check the updates.

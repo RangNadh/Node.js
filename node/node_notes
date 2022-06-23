@@ -1,3 +1,4 @@
+---------------> 22-June-22
 Node.js:
 -> It is uses an event-driven, non-blocking model that makes it lightweight and efficient.
 
@@ -22,6 +23,8 @@ Why node.js is popular?
 JS engines:
 -> Computers do not understand JS.
 -> A js engine takes js, and converts it into something it does understand - machine code.
+
+--------------> 23-June-22
 
 Client and Server:
 
@@ -58,3 +61,32 @@ Response Headers =>
 -Content-Type => type of content we will give in this.
 
 -Status => status is nothing but getting error or successful.
+
+Buffers:
+
+    -> Temporary storage spot for a chunk of data that is being transferred from one place to another.
+
+    -> The buffer is filled with data, then passed along.
+
+    -> Transfer small chunks of data at a time.
+
+                              BUFFER
+    Data Passed On <--------- |||||| <--|-- DATA.
+
+-> Buffer is nothing but it diviedes the collection data into small chunks.
+
+Stream: It is a flow of data.
+
+        -> In node js, the data will flow like chunks and those chunks will store in buffer and finally that buffer will share the data.
+
+        -> Can create strean in node js to transfer data.
+
+        -> It will increase the performance.
+
+-> Streams are 3 types:
+
+    - Writable streams: allow node js to write data to a stream.
+
+    - Readable streams: allow node js to read data from a stream.
+
+    - Duplex: can read and write to a stream.
