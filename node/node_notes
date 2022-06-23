@@ -90,3 +90,7 @@ Stream: It is a flow of data.
     - Readable streams: allow node js to read data from a stream.
 
     - Duplex: can read and write to a stream.
+
+-> Pipes: The data is coverted into small chunks and sends into buffer. After that pipes are useful to write the stream automatically.
+
+-> Pipes can move from read to write. But, not vice versa.
