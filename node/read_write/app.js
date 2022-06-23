@@ -5,7 +5,9 @@ var fs = require('fs');
 
 // Asynchronous method
 
-fs.readFile('readMe.txt', 'utf-8', function(err, data){
- fs.writeFile('writeMe.txt', data);
- console.log(data);
+fs.readFile('readMe.txt', 'utf8', function(err, data){
+    if (err) console.log(err);
+    fs.writeFile('writeMe.txt', data, (err) => {
+        if (err) console.log(err);
+    });
 });
