@@ -108,3 +108,11 @@ Stream: It is a flow of data.
     -> DELETE: app.delete('route', fn)
 
     -> PUT:
+
+Template Engines: Its is used to create an HTML template with minimal code.
+
+-> Ex: EJS => Embedded JavaScript template engine.
+
+-> It is a light weight engine.
+
+npm install ejs -save
