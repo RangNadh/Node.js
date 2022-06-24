@@ -94,3 +94,15 @@ Stream: It is a flow of data.
 -> Pipes: The data is coverted into small chunks and sends into buffer. After that pipes are useful to write the stream automatically.
 
 -> Pipes can move from read to write. But, not vice versa.
+
+-> Express => It is also a package and it is used for routing and templating.
+
+-> It helps in routing with the help of http methods.
+
+    -> GET: app.get('route', fn)
+
+    -> POST: app.post('route', fn)
+
+    -> DELETE: app.delete('route', fn)
+
+    -> PUT:
