@@ -116,3 +116,5 @@ Template Engines: Its is used to create an HTML template with minimal code.
 -> It is a light weight engine.
 
 npm install ejs -save
+
+-> Middleware: It is in between request and response and runs the code.
