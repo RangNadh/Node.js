@@ -118,3 +118,15 @@ Template Engines: Its is used to create an HTML template with minimal code.
 npm install ejs -save
 
 -> Middleware: It is in between request and response and runs the code.
+
+Query strings: It is used to mention the value from the url only like
+
+    -> mysite.com/blog/news?page=2
+
+    In this url page=2 is the value.
+
+    ->mysite.com/contact?person=ryu&dept=marketing
+
+    In this person=ryu&dept=marketing is the value.
+
+    -> Parse the request, and pull out the data.
