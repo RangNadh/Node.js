@@ -130,3 +130,11 @@ Query strings: It is used to mention the value from the url only like
     In this person=ryu&dept=marketing is the value.
 
     -> Parse the request, and pull out the data.
+
+POST Requests:
+
+            -> POST is a request method.
+
+            -> POST requests, ask the server to accept/store data which is enclosed in the body of the request.
+
+            -> Often used when submitting forms.
