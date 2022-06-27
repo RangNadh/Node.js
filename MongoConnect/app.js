@@ -7,6 +7,11 @@ var Book = require('./book_model');
 var db = 'mongodb+srv://ranganadh:ran@cluster0.dyzt1.mongodb.net/mongoose';
 mongoose.connect(db);
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+
 app.get('/', function(req, res){
     res.send('happy to be here.');
 });
@@ -35,6 +40,63 @@ app.get('/books/:id', function(req, res){
             console.log(book);
             res.json(book);
         }
+    });
+});
+
+app.post('/book',function(req, res){
+    var newBook = new Book();
+
+    newBook.title = req.body.title;
+    newBook.author = req.body.author;
+    newBook.category = req.body.category;
+
+    newBook.save(function(err, book){
+        if(err){
+            res.send('error saving book');
+        }else{
+            console.log(book);
+            res.send(book);
+        }
+    });
+});
+
+app.post('/book2', function(req, res){
+    Book.create(req.body, function(err, book){
+        if(err){
+            res.send('error saving book');
+        }else{
+            console.log(book);
+            res.send(book);
+        }
+    });
+});
+app.put('/book/:id', function(req, res){
+    Book.findOneAndUpdate({
+        _id:req.params.id 
+    },{$set: 
+        {title:req.body.title}, 
+        {upsert: true},
+        function(err, newBook){
+            if(err){
+                console.log('error occured');
+            }else{
+                console.log(newBook);
+                res.status(204);
+            }
+        }});
+});
+
+app.delete('/book/:id', function(req, res){
+    Book.findOneAndRemove({
+        _id:req.params.id
+    },function(arr, book){
+        if(err){
+            res.send('error deleting');
+        }else{
+            console.log(look);
+            res.status(204);
+        }
+    }
     });
 });
 
