@@ -1,0 +1,17 @@
+Mongoose: It is a schema that is used to model your application data.
+
+-> Schema will creates the key, value pairs for the different data types.
+
+-> Mongoose is helpful for connecting the node application with database.
+
+-> Creating a module => var mongoose = require('mongoose');
+
+-> Then we will set a variable refernce for mongoose schema.
+=> var Schema = mongoose.Schema;
+
+Connection ->
+
+        var myDB = 'mongodb://localhost/dbName';
+        mongoose.connect(myDB);
+
+-> Here db name can be anything and .connect is used to connect the db.
